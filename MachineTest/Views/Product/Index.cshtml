@@ -1,0 +1,37 @@
+﻿@model MachineTest.Models.ProductModel
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Pages/Product.js"></script>
+<h2>Index</h2>
+
+
+<div>
+    <label id="hdnid"></label>
+    <div class="form-group">
+        <input type="text" id="txtName" placeholder="Your Product Name" class="form-control">
+    </div>
+    <br />
+    <div class="form-group">
+        <input type="text" id="txtAmount" placeholder="Your Amount" class="form-control">
+    </div>
+    <br />
+    <div class="form-group">
+        <input type="text" id="txtdis" placeholder="Your Description" class="form-control">
+    </div>
+    <br />
+      <div class="form-group">
+        <input type="file" id="File1" class="form-control">
+
+    </div>
+  
+    <br />
+
+    <input type="button" id="btnsend" value="Submit" onclick="saveproduct()" class="btn-success" />
+</div>
+<br />
+
+
+
+

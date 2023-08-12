@@ -1,0 +1,26 @@
+﻿@model MachineTest.Models.LoginModel
+
+@{
+    ViewBag.Title = "LoginIndex";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm("LoginIn", "Login", FormMethod.Post))
+{
+    <h4>@Html.LabelFor(a => a.UserName)</h4>
+    <div>
+        @Html.TextBoxFor(a => a.UserName, new { @maxlength = "10", @size = "10", @class = "Login_ _input" })
+        @Html.ValidationMessageFor(a => a.UserName)
+    </div>
+    <br />
+    <h4>
+        @Html.LabelFor(a => a.Password)
+    </h4>
+    <div>
+        @Html.PasswordFor(a => a.Password, new { @class = "Login_ _input" })
+    </div>
+    <br />
+    <input type="submit" value="Login" class="btn btn-info" />
+
+}
+
